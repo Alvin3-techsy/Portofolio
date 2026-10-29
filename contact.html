@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Alvin melalui formulir kontak portofolio.">
+  <title>Contact | Portofolio Alvin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+<!-- bikin contact ambil perintah dari contact.js -->
+ <header class="site-header">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">Alvin<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Buka menu navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link "  href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link "  href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link "  href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <main class="container page-content">
+  <section class="page-heading">
+    <p class="eyebrow">MARI TERHUBUNG</p>
+    <h1>Hubungi Saya</h1>
+    <p class="page-intro">Punya pertanyaan atau saran? Silakan gunakan formulir berikut.</p>
+  </section>
+
+  <div class="contact-layout row g-4">
+    <aside class="contact-info content-card card shadow-sm col-lg-5">
+      <h2>Informasi Kontak</h2>
+      <div class="contact-detail">
+        <span class="detail-icon">✉</span>
+        <div><strong>Email</strong><p>tester@email.com</p></div>
+      </div>
+      <div class="contact-detail">
+        <span class="detail-icon">⌖</span>
+        <div><strong>Lokasi</strong><p>Indonesia</p></div>
+      </div>
+      <p class="small-text"> <b>DISCLAIMER</b></p>
+      <p class="small-text">Form ini hanya simulasi saja dan tidak mengirim email sungguhan.</p>
+    </aside>
+
+      <section class="content-card card shadow-sm col-lg-7">
+        <h2>Kirim Pesan</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-field mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Masukkan nama" autocomplete="name" aria-describedby="name-error">
+            <small class="field-error" id="name-error"></small>
+          </div>
+          <div class="form-field mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="email-error">
+            <small class="field-error" id="email-error"></small>
+          </div>
+          <div class="form-field mb-3">
+            <label for="message" class="form-label">Pesan</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tuliskan pesan..." aria-describedby="message-error"></textarea>
+            <small class="field-error" id="message-error"></small>
+          </div>
+          <div id="form-notification" class="form-notification" role="status" aria-live="polite" hidden></div>
+          <button class="btn btn-primary w-100 button-full" type="submit">Kirim Pesan</button>
+        </form>
+      </section>
+  </div>
+ </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+      <p>© <span class="current-year">2026</span> Alvin. Dibuat untuk proyek pembelajaran.</p>
+      <a href="index.html">Kembali ke Home</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

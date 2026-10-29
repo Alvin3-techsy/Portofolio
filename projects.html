@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kumpulan proyek pembelajaran web Alvin.">
+  <title>Projects | Portofolio Alvin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/projects.js" defer></script>
+</head>
+<body>
+  <!-- Daftar projek ambil perintah dari projects.js -->
+   <header class="site-header">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">Alvin<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Buka menu navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link "  href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link "  href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link "  href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <main class="container page-content">
+    <section class="page-heading">
+      <p class="eyebrow">HASIL LATIHAN SAYA</p>
+      <h1>Proyek Pilihan</h1>
+      <p class="page-intro">Beberapa contoh proyek latihan.</p>
+    </section>
+
+    <section aria-label="Filter kategori proyek">
+      <div class="filter-bar btn-group flex-wrap" role="group" aria-label="Pilih kategori proyek">
+        <button class="btn btn-outline-primary filter-button active" type="button" data-filter="all" aria-pressed="true">Semua</button>
+        <button class="btn btn-outline-primary filter-button" type="button" data-filter="html-css" aria-pressed="false">HTML/CSS</button>
+        <button class="btn btn-outline-primary filter-button" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+      </div>
+      <p id="filter-status" class="small-text" aria-live="polite">Menampilkan semua proyek</p>
+    </section>
+
+    <section class="project-grid row g-4" id="project-list" aria-label="Daftar Proyek">
+      <article class="col-md-6 col-lg-4"><div class="project-card card h-100" data-category="html-css">
+        <div class="project-visual project-visual-one"><span>01</span></div>
+        <div class="project-card-content card-body">
+          <span class="category-label">HTML/CSS</span>
+          <h2>Personal Portofolio</h2>
+          <p>Website multi-halaman untuk memperkenalkan profil, keterampilan, proyek, dan kontak.</p>
+          <div class="tag-list d-flex flex-wrap gap-2"><span>HTML</span><span>CSS</span></div>
+        </div>
+      </div></article>
+
+      <article class="col-md-6 col-lg-4"><div class="project-card card h-100" data-category="javascript">
+        <div class="project-visual project-visual-two"><span>02</span></div>
+        <div class="project-card-content card-body">
+          <span class="category-label">JavaScript</span>
+          <h2>ToDo List App</h2>
+          <p>Aplikasi atau web yang digunakan untuk menambah, menyelesaikan, memfilter tugas.</p>
+          <div class="tag-list d-flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div></article>
+
+      <article class="col-md-6 col-lg-4"><div class="project-card card h-100" data-category="javascript">
+        <div class="project-visual project-visual-three"><span>03</span></div>
+        <div class="project-card-content card-body">
+          <span class="category-label">JavaScript</span>
+          <h2>Movie JS</h2>
+          <p>Latihan membuat website untuk melihat deskripsi sebuah Film.</p>
+          <div class="tag-list d-flex flex-wrap gap-2"><span>HTML</span><span>JavaScript</span></div>
+        </div>
+      </div></article>
+    </section>
+   </main>
+
+   <footer class="site-footer">
+    <div class="container footer-content d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+      <p>© <span class="current-year">2026</span> Alvin. Dibuat untuk proyek pembelajaran.</p>
+      <a href="contact.html">Kontak</a>
+    </div>
+   </footer>
+   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

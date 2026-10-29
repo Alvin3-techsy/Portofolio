@@ -23,6 +23,7 @@ Melatih pembuatan halaman website yang saling terhubung, menjaga konsistensi tam
 Projek ini hanya simulasi dan tidak benar benar mengirimkan email
 
 ## Struktur folder
+```text
 personal-portfolio/
 ├── index.html
 ├── about.html
@@ -35,3 +36,4 @@ personal-portfolio/
 │   ├── projects.js
 │   └── contact.js
 └── README.md
+```
